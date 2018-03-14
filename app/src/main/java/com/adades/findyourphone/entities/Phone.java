@@ -3,7 +3,7 @@ package com.adades.findyourphone.entities;
 /**
  * Created by alu2012081 on 09/03/2018.
  */
-// NO PODEM PARLAR
+// NO PODEM PARLAR MACHETE AL MACHOTE
 public class Phone {
 
     private String id;

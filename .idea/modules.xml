@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Find Your Phone.iml" filepath="$PROJECT_DIR$/Find Your Phone.iml" />
+      <module fileurl="file://D:\Curses\DAM2T\M06 - ADADES\3r Trimestre\putaprueba\FindYourPhone\Find Your Phone.iml" filepath="D:\Curses\DAM2T\M06 - ADADES\3r Trimestre\putaprueba\FindYourPhone\Find Your Phone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FindYourPhone.iml" filepath="$PROJECT_DIR$/.idea/FindYourPhone.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Curses\DAM2T\M06 - ADADES\3r Trimestre\putaprueba\FindYourPhone\app\app.iml" filepath="D:\Curses\DAM2T\M06 - ADADES\3r Trimestre\putaprueba\FindYourPhone\app\app.iml" />
     </modules>
   </component>
 </project>

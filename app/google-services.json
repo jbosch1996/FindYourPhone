@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "595473738210",
+    "firebase_url": "https://find-your-phone-234bc.firebaseio.com",
+    "project_id": "find-your-phone-234bc",
+    "storage_bucket": "find-your-phone-234bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595473738210:android:10f245ce0775de7a",
+        "android_client_info": {
+          "package_name": "com.adades.findyourphone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595473738210-3hfkuf7l6hc1fvn6fgrcgpk2h0u138lu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adades.findyourphone",
+            "certificate_hash": "a08a988f1f99be68d828fb8f26f9f98814ae20c2"
+          }
+        },
+        {
+          "client_id": "595473738210-i8tef77r8ip75et9lbnp1e5vcl21s93d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTpa2COsdE7aXSKKyPk2vUBREDBFUmJew"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595473738210-i8tef77r8ip75et9lbnp1e5vcl21s93d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

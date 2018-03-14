@@ -8,6 +8,7 @@ import android.graphics.Paint;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -42,7 +43,7 @@ import java.util.List;
 
 public class AdminActivity extends AppCompatActivity {
 
-    Button btnSave,btnBrowseImage;
+    Button btnSave,btnBrowseImage,showDialog;
     EditText edtName;
     DatabaseReference databaseReference;
     ListView listViewPhones;
@@ -70,6 +71,22 @@ public class AdminActivity extends AppCompatActivity {
     imageView = findViewById(R.id.insertImages);
     btnBrowseImage = findViewById(R.id.btnBrowseImage);
     storageReference = FirebaseStorage.getInstance().getReference();
+        showDialog = findViewById(R.id.btnshowDialog);
+        showDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder mbuilder = new AlertDialog.Builder(AdminActivity.this);
+                View mView = getLayoutInflater().inflate(R.layout.dialog_show_phone_admin,null);
+                EditText nPhone = mView.findViewById(R.id.namePhoneAdmin);
+                Button btnSavePhone = mView.findViewById(R.id.btnSavePhone);
+                mbuilder.setView(mView);
+                AlertDialog dialog = mbuilder.create();
+                dialog.show();
+
+            }
+
+        });
+
 
 
 

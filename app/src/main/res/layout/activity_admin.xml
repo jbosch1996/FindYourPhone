@@ -26,6 +26,12 @@
             android:text="Image"
             />
 
+        <Button
+            android:id="@+id/btnshowDialog"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Show Dialog" />
+
         <ImageView
             android:id="@+id/insertImages"
             android:src="@mipmap/ic_launcher"

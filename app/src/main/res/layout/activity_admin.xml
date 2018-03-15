@@ -6,14 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.adades.findyourphone.AdminActivity">
 
-    <LinearLayout
-        android:layout_width="380dp"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="4dp"
-        tools:ignore="MissingConstraints">
 
-        <EditText
+      <!--  <EditText
             android:id="@+id/editPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -25,13 +19,23 @@
             android:layout_height="wrap_content"
             android:text="Image"
             />
-
-        <Button
-            android:id="@+id/btnshowDialog"
-            android:layout_width="match_parent"
-            android:layout_height="38dp"
-            android:text="Show Dialog" />
-
+-->
+    <Button
+        android:id="@+id/btnshowDialog"
+        android:layout_width="370dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:text="Create Phone"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--
         <ImageView
             android:id="@+id/insertImages"
             android:src="@mipmap/ic_launcher"
@@ -44,27 +48,38 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Save Phone" />
+-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Phone List"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintBottom_toTopOf="@+id/listViewPhones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20px"
-            android:layout_marginTop="20px"
-            android:text="Phone List"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/black" />
+    <ListView
+        android:id="@+id/listViewPhones"
+        android:layout_width="match_parent"
+        android:layout_height="359dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <ListView
-            android:id="@+id/listViewPhones"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </ListView>
-    </LinearLayout>
-
+    </ListView>
 
 </android.support.constraint.ConstraintLayout>

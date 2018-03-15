@@ -1,7 +1,9 @@
 package com.adades.findyourphone.entities;
 
 import android.app.Activity;
+import android.graphics.drawable.BitmapDrawable;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.adades.findyourphone.AdminActivity;
+import com.adades.findyourphone.HomeActivity;
 import com.adades.findyourphone.R;
 import com.google.firebase.database.DatabaseReference;
 import com.squareup.picasso.Picasso;
@@ -38,12 +41,29 @@ public class PhoneListUser extends ArrayAdapter<Phone> {
         LayoutInflater inflater = context.getLayoutInflater();
         View listViewItem = inflater.inflate(R.layout.layout_phone_list_user,null,true);
 
-        TextView txtPhoneName = listViewItem.findViewById(R.id.namePhoneUser);
-        ImageView imageViewPhone = listViewItem.findViewById(R.id.imagePhoneUser);
+        final TextView txtPhoneName = listViewItem.findViewById(R.id.namePhoneUser);
+        final ImageView imageViewPhone = listViewItem.findViewById(R.id.imagePhoneUser);
 
         Phone phone = phoneList.get(pos);
         txtPhoneName.setText(phone.getName());
         Picasso.get().load(phone.getImageUri()).into(imageViewPhone);
+
+        listViewItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder mbuilder = new AlertDialog.Builder(context);
+                View mView = LayoutInflater.from(context).inflate(R.layout.dialog_show_phone_user,null);
+                TextView phoneName = mView.findViewById(R.id.phoneNameDialog);
+                ImageView ivPhone = mView.findViewById(R.id.ivDialog);
+                phoneName.setText(txtPhoneName.getText());
+                ivPhone.setImageBitmap(((BitmapDrawable) imageViewPhone.getDrawable()).getBitmap());
+
+
+                mbuilder.setView(mView);
+                AlertDialog dialog = mbuilder.create();
+                dialog.show();
+            }
+        });
 
         return listViewItem;
     }

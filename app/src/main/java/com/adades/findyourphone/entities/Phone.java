@@ -27,9 +27,10 @@ public class Phone {
         this.so = so;
     }
 
-    public Phone(String id, String name) {
+    public Phone(String id, String name,String imageUri) {
         this.id = id;
         this.name = name;
+        this.imageUri = imageUri;
     }
 
     public String getId() {

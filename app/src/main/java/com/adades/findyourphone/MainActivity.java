@@ -77,11 +77,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         //NO POTS TIRAR ENRRERE
                         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                         startActivity(intent);
+                        progressBar.setVisibility(View.INVISIBLE);
                     }else {
                         Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                         //NO POTS TIRAR ENRRERE
                         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                         startActivity(intent);
+                        progressBar.setVisibility(View.INVISIBLE);
                     }
                 }else {
                     Toast.makeText(getApplicationContext(), task.getException().getMessage(),Toast.LENGTH_SHORT).show();

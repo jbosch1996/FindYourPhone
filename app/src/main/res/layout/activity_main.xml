@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.adades.findyourphone.MainActivity"
-    android:background="@drawable/backgroundlogin">
+    android:background="@drawable/backgroundtry">
 
     <EditText
         android:id="@+id/email"
@@ -48,7 +48,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:text="login"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/btnRegister"
@@ -62,7 +62,7 @@
         android:layout_marginBottom="124dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:text="register"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"

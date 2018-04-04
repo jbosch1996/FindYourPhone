@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Find Your Phone.iml" filepath="$PROJECT_DIR$/Find Your Phone.iml" />
-      <module fileurl="file://D:\Curses\DAM2T\M06 - ADADES\3r Trimestre\Find Your Phone\FindYourPhone\Find Your Phone.iml" filepath="D:\Curses\DAM2T\M06 - ADADES\3r Trimestre\Find Your Phone\FindYourPhone\Find Your Phone.iml" />
-      <module fileurl="file://C:\Users\alu2012082\Documents\Find Your Phone\FindYourPhone.iml" filepath="C:\Users\alu2012082\Documents\Find Your Phone\FindYourPhone.iml" />
+      <module fileurl="file://D:/Curses/DAM2T/M06 - ADADES/3r Trimestre/Find Your Phone/FindYourPhone/Find Your Phone.iml" filepath="D:/Curses/DAM2T/M06 - ADADES/3r Trimestre/Find Your Phone/FindYourPhone/Find Your Phone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FindYourPhone.iml" filepath="$PROJECT_DIR$/FindYourPhone.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
